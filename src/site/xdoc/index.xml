@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <title>Plugin hellokt (Hello Kotlin)</title>
+    </properties>
+    <body>
+        <section name="Plugin hellokt (Hello Kotlin)">
+            <p>
+                <img src="images/kotlin.png" />
+            </p>
+            <subsection name="Introduction">
+                <p>This plugin is a demo of an "Hello World!" plugin written in <a href="https://kotlinlang.org/">Kotlin progamming language</a></p>
+            </subsection>
+        </section>
+    </body>
+</document>
+

@@ -56,26 +56,16 @@
 
     <build>
         <sourceDirectory>src/kotlin</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>src/kotlin</directory>
+                <excludes>
+                    <exclude>**/*.kt</exclude>
+                    <exclude>**/.svn/**</exclude>
+                </excludes>
+            </resource>
+        </resources>
         <plugins>
-            <!--      <plugin>
-              <groupId>org.codehaus.mojo</groupId>
-              <artifactId>build-helper-maven-plugin</artifactId>
-              <version>1.7</version>
-              <executions>
-                <execution>
-                  <id>add-source</id>
-                  <phase>generate-sources</phase>
-                  <goals>
-                    <goal>add-source</goal>
-                  </goals>
-                  <configuration>
-                    <sources>
-                      <source>${project.basedir}/src/kotlin</source>
-                    </sources>
-                  </configuration>
-                </execution>
-              </executions>
-            </plugin>-->
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
                 <groupId>org.jetbrains.kotlin</groupId>

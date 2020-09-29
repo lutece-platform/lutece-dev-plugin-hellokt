@@ -3,19 +3,20 @@
     <parent>
         <artifactId>lutece-global-pom</artifactId>
         <groupId>fr.paris.lutece.tools</groupId>
-        <version>5.1.0</version>
+        <version>4.0.4</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>fr.paris.lutece.plugins</groupId>
-    <artifactId>lutece-kotlin-global-pom</artifactId>
-    <version>5.1.0-SNAPSHOT</version>
+    <artifactId>plugin-hellokt</artifactId>
+    <packaging>lutece-plugin</packaging>
+    <version>1.0.0-SNAPSHOT</version>
 
-    <name>Lutece kotlin global pom</name>
+    <name>Lutece hellokt plugin</name>
     
     <properties>
-        <kotlin.version>1.4.10</kotlin.version>
-        <jiraProjectName>KOTLINPOM</jiraProjectName>
+        <kotlin.version>1.2.21</kotlin.version>
+        <jiraProjectName>HELLOKT</jiraProjectName>
         <jiraComponentId></jiraComponentId>
     </properties>
 
@@ -40,6 +41,12 @@
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>fr.paris.lutece</groupId>
+            <artifactId>lutece-core</artifactId>
+            <version>[6.0.1,)</version>
+            <type>lutece-core</type>
+        </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib</artifactId>
@@ -125,9 +132,9 @@
     </build>
 
     <scm>
-        <connection>scm:git:https://github.com/lutece-platform/tools-maven-kotlin-global-pom.git</connection>
-        <developerConnection>scm:git:https://github.com/lutece-platform/tools-maven-kotlin-global-pom.git</developerConnection>
-        <url>scm:git:https://github.com/lutece-platform/tools-maven-kotlin-global-pom.git</url>
+        <connection>scm:git:https://github.com/lutece-platform/lutece-dev-plugin-hellokt.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/lutece-dev-plugin-hellokt.git</developerConnection>
+        <url>https://github.com/lutece-platform/lutece-dev-plugin-hellokt.git</url>
     </scm>
     
 </project>
